@@ -735,7 +735,7 @@
 				}
 
 
-				if ((el.children.length === 0) || (el.children[0] === ghostEl) ||
+				if (!target || (el.children.length === 0) || (el.children[0] === ghostEl) ||
 					(el === evt.target) && (target = _ghostIsLast(el, evt))
 				) {
 					if (target) {
